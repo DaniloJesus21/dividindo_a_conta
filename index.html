@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Dividindo a conta</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="conteudo">
+
+      <div class="conta">
+        <h2>Conta</h2>
+        <input type="text" placeholder="R$" class="js-conta-input">
+      </div>
+
+      <div class="taxa">
+        <h2>Selecione a Taxa %</h2>
+        <div class="taxa-buttons">
+          <button onclick="calculaTaxa(5)">5%</button>
+          <button onclick="calculaTaxa(8)">8%</button>
+          <button onclick="calculaTaxa(10)">10%</button>
+          <button onclick="calculaTaxa(12)">12%</button>
+          <button onclick="calculaTaxa(15)">15%</button>
+          <input type="text" placeholder="Customizado" class="js-taxa-input">
+        </div>
+      </div>
+
+      <div class="pessoas">
+        <h2>Número de pessoas</h2>
+        <input type="text">
+      </div>
+
+      <div class="pagamento">
+        <div class="pagamento-taxa">
+          <h2>Taxa<br><span> / pessoa</span></h2>
+          <p class="js-texto-taxa"></p>
+        </div>
+
+        <div class="pagamento-pessoa">
+          <h2>Pagamento<br><span> / pessoa</span> </h2>
+          <p class="js-texto-pagamento">R$34.99</p>
+        </div>
+
+        <button type="reset">Resetar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
