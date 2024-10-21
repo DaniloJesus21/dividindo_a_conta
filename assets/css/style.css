@@ -24,14 +24,14 @@ div {
 
 .logo {
   text-align: center;
-  padding: 24px;
+  padding: 24px 24px 0;
   background-color: rgb(197, 228, 231);
 }
 
 .conteudo {
   max-width: 480px;
   width: 100%; 
-  padding: 24px;
+  padding: 24px 24px 8px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background-color: white;
@@ -131,7 +131,7 @@ footer {
   display: block;
   float: left;
   width: 100%;
-  padding: 10px;
+  padding: 8px 10px;
 }
 
 .footer-container p {
