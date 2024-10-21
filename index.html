@@ -17,7 +17,7 @@
 
       <div class="conta">
         <h2>Conta</h2>
-        <input type="text" placeholder="R$" class="js-conta-input">
+        <input type="text" placeholder="R$" class="js-conta-input" required id="conta-input">
       </div>
 
       <div class="taxa">
@@ -28,13 +28,13 @@
           <button onclick="calculaTaxa(10)">10%</button>
           <button onclick="calculaTaxa(12)">12%</button>
           <button onclick="calculaTaxa(15)">15%</button>
-          <input type="text" placeholder="Customizado" class="js-taxa-input">
+          <input type="text" placeholder="Customizado" class="js-taxa-input" required>
         </div>
       </div>
 
       <div class="pessoas">
         <h2>Número de pessoas</h2>
-        <input type="text">
+        <input type="text" required>
       </div>
 
       <div class="pagamento">
@@ -45,13 +45,20 @@
 
         <div class="pagamento-pessoa">
           <h2>Pagamento<br><span> / pessoa</span> </h2>
-          <p class="js-texto-pagamento">R$34.99</p>
+          <p class="js-texto-pagamento"></p>
         </div>
 
-        <button type="reset">Resetar</button>
+        <button class="js-calcular button btn-calcular" type="reset">Calcular</button>
+        <button class="js-resetar-button btn-resetar"type="reset">Resetar</button>
       </div>
     </div>
-
+    <footer>
+      <div class="footer-container">
+        <p>&copy; Todos os direitos reservados - 2024
+            <small>Desenvolvido por Danilo Jesús</small>
+        </p>
+      </div>
+    </footer>
   </div>
 
   <script src="assets/js/script.js"></script>
